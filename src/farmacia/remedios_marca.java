@@ -2,11 +2,11 @@
 package farmacia;
 
 
-public class remedios_marca extends remedios {
-    private String marca; 
+public class remedios_marca {
+    String marca; 
 
-    public remedios_marca(String nome, double valor, String marca) {
-        super(nome, valor);
+    public remedios_marca(String nome, double valor, String marca){
+        
     }
 
     public String getMarca() {
