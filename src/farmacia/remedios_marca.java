@@ -1,17 +1,35 @@
 
 package farmacia;
-import java.util.Scanner;
 
-public class remedios_marca {
-    Scanner ler = new Scanner(System.in); 
+
+public class remedios_marca extends remedios {
+   
     String marca;
     
-    public remedios_marca(double valor, String marca){
-        System.out.println("qual a marca do remedio: ");
-        marca = ler.next();
+    public String marca1 (String marca1){
+        marca1 = "Neo Quimica";
+        System.out.println("marca do remedio 1: "+ marca1);
         
-        System.out.println("qual o preco do remedio "+marca+":");
-        valor = ler.nextDouble();
+        return marca1;
+    }
+    
+     public String marca2 (String marca2){
+        marca2 = "Teuto Brasileiro";
+        System.out.println("marca do remedio 2: "+marca2);
+        
+        return marca2;
+    }
+     
+    public String marca3 (String marca3){
+        marca3 = "EMS Pharma";
+        
+        System.out.println("marca do remedio 3: "+marca3);
+       
+        return marca3;
+    }
+
+    remedios_marca() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getMarca() {
